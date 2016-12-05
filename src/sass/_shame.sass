@@ -1,0 +1,56 @@
+body
+  height: 100%
+  text-align: center
+
+h2
+  font-size: 5vmin
+
+ul
+  align-items: center
+  display: flex
+  justify-content: center
+  list-style: none outside none
+  margin: 0
+  padding: 0
+
+li
+  align-items: center
+  background: radial-gradient(ellipse farthest-corner, rgba(white, .2) 0, rgba(black, .2) 100%)
+  border: .25vmin solid rgba(black, .3)
+  border-radius: .5vmin
+  cursor: pointer
+  display: flex
+  font-size: 5vmin
+  height: 15vmin
+  justify-content: center
+  margin: .5em
+  padding: .3em
+  transition: .3s all ease-in-out
+  width: 15vmin
+
+  &:hover
+    transform: scale(1.05)
+
+.selected
+  background-color: #94a8cc
+
+.correct
+  background-color: #83c057
+
+.wrong
+  background-color: #d44248
+  cursor: not-allowed
+
+p
+  font-size: 3vmin
+
+.blinking
+  animation: blink .8s ease-out infinite
+  display: inline-block
+
+@keyframes blink
+  0%
+    transform: scale(1)
+
+  90%
+    transform: scale(1.3)

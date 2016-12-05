@@ -1,0 +1,13 @@
+extends layout
+block title
+  title Day 2 - Math Game
+block content
+  .game#game
+    h2
+      span#question
+      span = 
+      span.blinking ?
+    ul#answers
+      each i in Array(4)
+        li
+    .score Score: #[span#score 0]
